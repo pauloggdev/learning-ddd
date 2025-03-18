@@ -35,7 +35,7 @@ describe("Customer unit tests", () => {
     it("should activate an customer", () =>{
         let customer = new Customer("123", "John");
         customer.activate();
-        expect(customer._active).toBeTruthy()
+        expect(customer.isActive()).toBeTruthy()
     })
     it("should deactivate an customer", () =>{
         let customer = new Customer("123", "John");

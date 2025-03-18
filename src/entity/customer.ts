@@ -34,6 +34,9 @@ export default class Customer {
     activate() {
         this._active = true;
     }
+    isActive(){
+        return this._active;
+    }
     deactivate() {
         this._active = false;
     }
